@@ -1,0 +1,23 @@
+###########
+# Startup #
+###########
+
+#get auth work with polkit-gnome
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# networkmanager-applet
+exec --no-startup-id nm-applet
+
+exec --no-startup-id syncthing --no-browser
+exec --no-startup-id ~/.screenlayout/monitor.sh
+exec --no-startup-id xfce4-clipman
+
+# Desktop notifications
+exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
+
+# dex execute .desktop files + apps using /etc/xdg/autostart.
+exec --no-startup-id dex --autostart --environment i3
+
+# set powersavings for display:
+exec --no-startup-id xset s 480 dpms 600 600 600
+

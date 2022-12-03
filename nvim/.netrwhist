@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/andrey/SyncAndroidPc/Programing/discover/Especializar/11 Guia Estelar JavaScript/2 tipos de dados'
+let g:netrw_dirhist_2='/home/andrey/.config/nvim'
+let g:netrw_dirhist_1='/home/andrey/.config/i3'
