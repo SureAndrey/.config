@@ -10,8 +10,9 @@ call plug#begin()
 	Plug 'ap/vim-css-color'       " Mostra as cores
 	Plug 'airblade/vim-gitgutter' " Mostra as alterações do Git em arquivos abertos
 	Plug 'dense-analysis/ale'     " Ver erros no codigo
-	Plug 'ervandew/supertab'      " Habilita o tab
+	" Plug 'ervandew/supertab'      " Habilita o tab
 	Plug 'kyoz/purify', { 'rtp': 'vim' } " Tema purify
+	Plug 'neoclide/coc.nvim', {'branch': 'release'} " snippers
 call plug#end()
 
 
@@ -69,6 +70,9 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+
+" prettier
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 " ATALHOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
