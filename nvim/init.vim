@@ -96,6 +96,7 @@ nnoremap <C-c> :y <CR>
 nnoremap <F3> :! node "%" <CR>
 nnoremap <F4> :! lua "%" <CR>
 nnoremap <F5> :! python "%" <CR>
+nnoremap <F6> :term python "%" <CR>
 
 " mover linhas
 nnoremap <C-j> :m .+1 <CR>
