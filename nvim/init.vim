@@ -1,6 +1,5 @@
 " Plugins <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
-
 " plugins 
 call plug#begin()
   Plug 'preservim/nerdcommenter' " plugin para ajudar a comentar / descomentar 
@@ -31,7 +30,7 @@ set showcmd          " exibe comando sendo executado
 set showmode         " mostrar o modo do editor
 set wildmenu         " mostra um menu mais avançado para sugestões de auto-completar.
 set autowrite        " autosave v1
-set cursorline       " destaca linha atual
+" set cursorline       " destaca linha atual
 set autowriteall     " autosave v2
 set termguicolors    " habilita melhor compatibilidade com temaselho
 set relativenumber   " distancia das linhas onde o cursor esta
@@ -71,9 +70,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 
-" prettier
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-
 " ATALHOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
 
@@ -90,7 +86,7 @@ nnoremap <C-p> :q <CR>
 map <F12> :PlugInstall <CR>
 
 " Copiar um texto e enviar esse texto para a área de transferência
-nnoremap <C-c> :y <CR>
+nnoremap <C-c> :+y <CR>
 
 " executar
 nnoremap <F3> :! node "%" <CR>
