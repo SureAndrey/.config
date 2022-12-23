@@ -74,7 +74,7 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 
 
 " abrir gerenciador de arquivos 
-map <F2> :NERDTreeFind "%" <CR>
+map <F2> :NERDTreeFind<CR>
 
 " salvar
 nnoremap <C-s> :w! <CR>
@@ -86,7 +86,7 @@ nnoremap <C-p> :q <CR>
 map <F12> :PlugInstall <CR>
 
 " Copiar um texto e enviar esse texto para a área de transferência
-nnoremap <C-c> :+y <CR>
+" nnoremap <C-c> :+y <CR>
 
 " executar
 nnoremap <F3> :! node "%" <CR>

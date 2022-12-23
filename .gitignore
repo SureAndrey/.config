@@ -1,0 +1,17 @@
+*
+
+!.gitignore
+!README.md
+!i3/
+!i3/*
+!i3/*/*
+!i3/include/
+!i3/include/*
+!i3/scripts/
+!i3/scripts/*
+!nvim/
+!nvim/*
+!kitty/
+!kitty/*
+!rofi/
+!rofi/*

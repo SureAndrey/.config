@@ -2,7 +2,7 @@
 # config starts here: #
 #######################
 
-font pango: /home/andrey/.fonts/FiraCode-Bold 10
+font pango: JetBrainsMono-Bold 10
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -19,11 +19,11 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 3
+for_window [class=".*"] border pixel 3
 
 # Set inner/outer gaps
-# gaps inner 3
-# gaps outer 3
+gaps inner 3
+gaps outer 3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
