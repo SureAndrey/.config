@@ -19,11 +19,11 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 2
 
 # Set inner/outer gaps
-gaps inner 3
-gaps outer 3
+#gaps inner 3
+#gaps outer 3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
