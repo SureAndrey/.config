@@ -11,6 +11,10 @@
 !i3/scripts/*
 !nvim/
 !nvim/*
+!nvim/colors/
+!nvim/colors/*
+!nvim/lua/
+!nvim/lua/*
 !kitty/
 !kitty/*
 !rofi/
